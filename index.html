@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+<section class="top_container">
+ <div class="card_black_gray_strip">
+  <img src="images/bg-card-back.png" alt="black_and_gray_card">
+  <p id="blackGrayCardValue">125</p>
+ </div>
+ 
+  <section class="card_with_multiColor">
+    <div class="card_log">
+    <img src="images/card-logo.svg" alt="card_logo">
+  </div>
+  <div class="card_value">0000 0000 0000 0000</div>
+  
+  <div class="nameAndDateOnCard">
+    <p id="cardHolderName">Jane Appleseed</p>
+    <div> <span id="monthValue">00</span>  <span id="yearValue">/00</span></div>
+  </div>
+  </section>
+</section>
+<section class="bottom_container">
+<div class="form_container">
+  <label for="name">  Cardholder Name</label>
+  <input type="text" id="name" placeholder=" e.g. Jane Appleseed" >
+<div id="cardField" >
+  <label for="cardNumber"> Card Number</label>
+  <input type="text" placeholder=" e.g. 1234 5678 9123 0000" id="cardNumber" maxlength="16">
+  <div class="error" style="color:hsl(0, 100%, 66%)"></div>
+</div>
+  <div >
+    <p id="space_tag"> Exp. Date (MM/YY) <span id="cvc"> CVC</span></p>
+    <div class="date"> 
+      <div class="inputFieldMonth">
+      <label for="month"></label>
+      <input type="text" id="month" placeholder="MM" maxlength="2">
+      <div class="error2" style="color:hsl(0, 100%, 66%)"></div> 
+    </div>
+      <div class="inputFieldYear">
+      <label for="year"></label>
+     <input type="text" id="year" placeholder="YY"  maxlength="4">
+     <div class="error3" style="color:hsl(0, 100%, 66%)"></div>
+    </div>
+   <div class="inputFieldNumber">
+    <label for="number"></label>
+    <input type="text" id="number" placeholder=" e.g. 123" maxlength="3">
+    <div class="error4" style="color:hsl(0, 100%, 66%)"></div>
+  </div>
+  </div>
+  <button id="confirmButton">Confirm</button>
+</div>
+</div>
+
+<div class="thank_message">
+  <div> <img src="images/icon-complete.svg" alt="icon_complete"></div>
+  <h3>Thank you!</h3>
+  <p id="card_paragraph">  We've added your card details
+  Continue</p>
+  <button id="ContinueBtn">Continue</button>
+</div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
